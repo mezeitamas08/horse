@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pápa Attila Biharugra</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="header__logo"
+        ><span>Pápa Attila</span>Biharugra
+      </a>
+      <i class="bx bx-menu" id="header__menu-icon"></i>
+      <nav class="nav">
+        <ul class="navbar">
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="#">Eredmények</a></li>
+          <li id="nav__horse">
+            <a href="lovak.html">Lovak</a>
+            <ul class="nav__dropdown-horse">
+              <li><a href="#">Gárda</a></li>
+              <li><a href="#">Eladóak</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Bálák</a></li>
+          <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="home">
+      <div class="home__left">
+        <div class="home__left-small-text">
+          Az oldalon található <span id="home__small-text"></span>
+        </div>
+        <!-- <div class="home__left-bg">
+          <img src="assets/img/bg_home.jpeg" alt="">
+        </div> -->
+        <div class="home__left-side">
+          <div class="home__left-side-name">
+            <h2>Pápa</h2>
+            <h3>Attila</h3>
+            <h5>Biharugra</h5>
+          </div>
+        </div>
+        <div class="home__left-bottom">
+          <div class="home__left-bottom-left-count">
+            <span id="output-left" class="output"></span>
+            <p class="output-bottom">Elért eredmény</p>
+          </div>
+          <div class="home__left-bottom-mid-count">
+            <span id="output-mid" class="output"></span>
+            <p class="output-bottom">Ló</p>
+          </div>
+          <div class="home__left-bottom-right-count">
+            <span id="output-right" class="output"></span>
+            <p class="output-bottom">Bála</p>
+          </div>
+        </div>
+      </div>
+      <div class="home__right">
+        <img src="assets/img/bbg.jpeg" alt="Background" class="home__bg" />
+        <img
+          src="assets/img/bg_home-front.png"
+          alt="Front"
+          class="home__bg-front"
+        />
+        <div class="home__right-bottom"></div>
+      </div>
+    </section>
+    <script src="assets/js/counter.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="assets/js/typed.js"></script>
+  </body>
+</html>

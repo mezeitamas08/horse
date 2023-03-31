@@ -1,0 +1,43 @@
+.header{
+  animation: backInRight;
+  animation-duration: 1s;
+}
+
+.home__bg{
+  animation: backInRight;
+  animation-duration: 1.5s;
+}
+
+.home__bg-front{
+  animation: backInRight;
+  animation-duration:  2s;
+}
+.home__left-side-name{
+  & >h2{
+    animation: backInLeft;
+    animation-duration: 1s;
+  }& >h3{
+    animation: backInLeft;
+    animation-duration: 1.5s;
+  }& >h5{
+    animation: backInLeft;
+    animation-duration: 2s;
+  }
+}
+
+
+.home__left-bottom-left-count{
+  animation: backInLeft;
+  animation-duration: 1.5s;
+
+}
+
+.home__left-bottom-mid-count{
+  animation: backInLeft;
+  animation-duration: 2.5s;
+}
+
+.home__left-bottom-right-count{
+  animation: backInLeft;
+  animation-duration: 3.5s;
+}

@@ -1,0 +1,254 @@
+@media (max-width: 1205px) {
+  .home__left-side-name {
+    left: 5%;
+  }
+  .home__bg-front {
+    height: 600px;
+    left: 35%;
+  }
+  .horses__btn-more {
+    padding: 1rem;
+  }
+  .horses__bg-right-text {
+    & > h2,
+    h4 {
+      letter-spacing: $letter-space-0;
+    }
+  }
+  .horses__bg-right-text > p {
+    margin-top: 2rem;
+    font-size: $font-size-12;
+    width: 80%;
+  }
+  .horses-sell {
+    top: 190vh;
+  }
+  .horses__heading {
+    text-align: center;
+  }
+  .contact__container {
+    height: 100vh;
+  }
+}
+@media (max-width: 1024px) {
+  .home__left-side-name {
+    left: 5%;
+    top: 50%;
+  }
+  .home__bg-front {
+    left: 30%;
+  }
+  .horses__btn-more {
+    font-size: $font-size-11;
+  }
+  .horses__bg {
+    height: 90%;
+    width: 90%;
+  }
+  .contact__left-container {
+    width: 60%;
+  }
+  .contact__container {
+    width: 70%;
+  }
+}
+@media (max-width: 850px) {
+  .home__bg-front {
+    display: none;
+  }
+  .home__left-side-name {
+    & > h2 {
+      font-size: $font-size-45;
+    }
+    & > h3 {
+      font-size: $font-size-30;
+    }
+  }
+  .home__left-side {
+    position: relative;
+    z-index: 2;
+  }
+  .home__bg {
+    left: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .horses__bg {
+    height: 100%;
+    width: 100%;
+  }
+  .contact__left-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  #header__menu-icon {
+    display: block;
+    margin-right: 2rem;
+  }
+  .home__bg {
+    height: 380px;
+    width: 80%;
+    left: 40%;
+    &-front {
+      display: none;
+    }
+  }
+  .home__left {
+    z-index: 2;
+    &-small-text {
+      display: block;
+    }
+  }
+  .home__left-side {
+    position: relative;
+    top: 26%;
+    height: 47vh;
+  }
+  .home__right {
+    position: absolute;
+    top: 32%;
+    left: -20%;
+    width: 100%;
+    height: 60vh;
+    z-index: 1;
+  }
+  .horses__bg {
+    height: 100%;
+    width: 100%;
+  }
+  .horses__bg-right-text > h2 {
+    font-size: $font-size-40;
+  }
+  .horses__bg-right-text > h4 {
+    font-size: $font-size-25;
+  }
+}
+
+@media(max-width: 640px){
+  .contact__container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 150%;
+  }.contact__left-container {
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid $color-black;
+    border-right: 0;
+  }
+  .contact__right{
+    top: 0;
+    position: relative;
+    width: 80%;
+  }
+  .contact__left{
+    position: relative;
+    top: 1%;
+  }
+}
+
+@media (max-width: 425px) {
+  .home__right {
+    height: 80%;
+  }
+  .home__left-bottom {
+    flex-direction: column;
+    top: 80%;
+    height: 40vh;
+  }
+  .home__left-side {
+    clip-path: polygon(0 0, 0% 100%, 100% 52%);
+    top: 39%;
+  }
+  .home__left-side-name {
+    top: 30%;
+    & > h2 {
+      font-size: $font-size-30;
+      letter-spacing: $letter-space-2;
+    }
+    & > h3 {
+      font-size: $font-size-25;
+      letter-spacing: $letter-space-2;
+    }
+    & > h5 {
+      font-size: $font-size-15;
+      letter-spacing: $letter-space-2;
+    }
+  }
+  .horses__bg {
+    flex-direction: column;
+  }
+  .horses__bg-left {
+    width: 100%;
+  }
+  .horses__bg-right {
+    width: 100%;
+    height: 100%;
+  }
+  .horses__btn-more {
+    bottom: 1%;
+    right: 5%;
+    font-size: $font-size-11;
+  }
+  .horses-sell {
+    top: 250vh;
+  }
+  .horses__bg-right-text {
+    padding-bottom: 3rem;
+  }
+  .horses,
+  .horses-sell {
+    padding: 0;
+  }
+  .contact__left i{
+    font-size: $font-size-25;
+  }
+  .contact__left h3{
+    font-size: $font-size-15;
+  }
+  #messsage{
+    height: 15%;
+  }
+  .contact__right{
+    height: 80%;
+    top: -5%;
+  }
+  .contact__left-container{
+    flex-direction: column;
+  }
+  .contact__left{
+    top: -5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .horses-sell {
+    top: 240vh;
+  }
+  .contact__right{
+    top: 8%;
+  }
+  .contact__left{
+    top: 2%;
+  }
+}
+
+@media (max-width: 320px) {
+  .home__bg {
+    top: 21%;
+    height: 250px;
+    width: 80%;
+    left: 40%;
+  }
+  .home__left-side-name {
+    top: 35%;
+  }
+  .horses-sell {
+    top: 230vh;
+  }
+}

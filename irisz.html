@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pápa Attila Biharugra</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="header__logo"
+        ><span>Pápa Attila</span>Biharugra
+      </a>
+      <i class="bx bx-menu" id="header__menu-icon"></i>
+      <nav class="nav">
+        <ul class="navbar">
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="#">Eredmények</a></li>
+          <li id="nav__horse">
+            <a href="lovak.html">Lovak</a>
+            <ul class="nav__dropdown-horse">
+              <li><a href="#">Gárda</a></li>
+              <li><a href="#">Eladóak</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Bálák</a></li>
+          <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="horse_alone" class="horse_alone">
+      <div class="horse_alone-bg">
+        <div class="horse_alone-left">
+          <div class="horse_alone-left-slides">
+            <img src="assets/img/bbg.jpeg" alt="Kép" />
+          </div>
+          <div class="horse_alone-left-slides">
+            <img src="assets/img/horses.jpg" alt="Kép" />
+          </div>
+          <div class="horse_alone-left-slides">
+            <img src="assets/img/bg_home-front.png" alt="Kép" />
+          </div>
+        </div>
+        <div class="horse_alone-right">
+          <h2>Név</h2>
+          <h5>Kor</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit atque
+            mollitia dolorum repudiandae cum odio sunt temporibus impedit
+            numquam maiores, non ad at sapiente dolor, iusto, ratione tenetur
+            odit dicta!
+          </p>
+        </div>
+        <div class="horse_alone-results">
+          <h2>Sikerek</h2>
+          <div class="horse__alone-results-first">
+            <span id="horse_output-first" class="horse_output">d</span>
+            <p class="horse_output-bottom">Ló</p>
+          </div>
+          <div class="horse__alone-results-second">
+            <span id="horse_output-second" class="horse_output">d</span>
+            <p class="horse_output-bottom">Ló</p>
+          </div>
+          <div class="horse__alone-results-third">
+            <span id="horse_output-third" class="horse_output">d</span>
+            <p class="horse_output-bottom">Ló</p>
+          </div>
+          <div class="horse__alone-results-fourth">
+            <span id="horse_output-fourth" class="horse_output">d</span>
+            <p class="horse_output-bottom">Ló</p>
+          </div>
+        </div>
+        <div class="horse_alone-gallery">
+          <img
+            src="assets/img/bbg.jpeg"
+            alt="Kép1"
+            class="gallery-small horse_alone-gallery-small"
+            onclick="currentSlide(1)"
+          /><img
+            src="assets/img/horses.jpg"
+            alt="Kép2"
+            class="gallery-small horse_alone-gallery-small"
+            onclick="currentSlide(2)"
+          /><img
+            src="assets/img/bg_home-front.png"
+            alt="Kép3"
+            class="gallery-small horse_alone-gallery-small"
+            onclick="currentSlide(3)"
+          />
+        </div>
+        <a class="horse-prev" onclick="plusSlides(-1)">❮</a>
+        <a class="horse-next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/swiper-horse.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pápa Attila Biharugra</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="header__logo"
+        ><span>Pápa Attila</span>Biharugra
+      </a>
+      <i class="bx bx-menu" id="header__menu-icon"></i>
+      <nav class="nav">
+        <ul class="navbar">
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="#">Eredmények</a></li>
+          <li id="nav__horse">
+            <a href="lovak.html">Lovak</a>
+            <ul class="nav__dropdown-horse">
+              <li><a href="#">Gárda</a></li>
+              <li><a href="#">Eladóak</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Bálák</a></li>
+          <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="contact" class="contact">
+      <!-- <div class="contact__heading heading">
+        <h2>Kapcsolat</h2>
+      </div> -->
+      <div class="contact__container">
+        <div class="contact__left">
+          <div class="contact__left-container">
+            <div class="contact__left-location">
+              <i class='bx bxs-map'></i>
+              <h3>Helyszín</h3>
+              <span>Biharugra</span>
+            </div>
+            <div class="contact__left-phone">
+              <i class="bx bxs-phone"></i>
+              <h3>Telefonszám</h3>
+              <span>06123456</span>
+            </div>
+            <div class="contact__left-email">
+              <i class="bx bx-envelope"></i>
+              <h3>Email</h3>
+              <span><a href="mailto:email">email</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="contact__right">
+          <div class="contact__right-heading heading">Írj üzenetet!</div>
+          <form action="" method="POST" class="contact__form">
+            <label for="name">Teljes név *</label>
+            <input type="text" name="name" id="name" placeholder="Teljes név" required class="contact__input" />
+            <label for="name">Email cím *</label>
+            <input type="email" name="email" id="email"  required placeholder="Email cím" class="contact__input" />
+            <label for="phone">Telefonszám *</label>
+            <input
+            required
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="Telefonszám" class="contact__input"
+            />
+            <label for="subject">Tárgy *</label>
+            <select name="subject" id="subject" class="subject" class="contact__input" required>
+              <option value="" disabled selected>Kérlek, válassz</option>
+              <option value="subject_contact">Kapcsolat</option>
+              <option value="subject_horse">Ló</option>
+              <option value="subject_bale">Bála</option>
+            </select>
+            <label for="message">Üzenet *</label>
+            <textarea
+              name="message"
+              id="messsage"
+              cols="30"
+              rows="10"
+              placeholder="Üzenet"
+            required></textarea>
+            <input type="submit" value="Küldés" />
+            <span>* Csillaggal jelölt mezők kötelezőek!</span>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/scroll.js"></script>
+  </body>
+</html>

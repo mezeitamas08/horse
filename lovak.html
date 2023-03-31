@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pápa Attila Biharugra</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="header header__horse">
+      <a href="#home" class="header__logo header__logo-horses"
+        ><span>Pápa Attila</span>Biharugra
+      </a>
+      <i class="bx bx-menu" id="header__menu-icon"></i>
+      <nav class="nav">
+        <ul class="navbar navbar__horses">
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="#">Eredmények</a></li>
+          <li id="nav__horse">
+            <a href="lovak.html">Lovak</a>
+            <ul class="nav__dropdown-horse">
+              <li><a href="#class">Gárda</a></li>
+              <li><a href="#sell">Eladóak</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Bálák</a></li>
+          <li><a href="#">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="horse" class="horse">
+      <div class="horseSlider">
+        <div class="horseSlides fade">
+          <div class="numbers ">1 / 3</div>
+          <img src="assets/img/bbg.jpeg" />
+        </div>
+
+        <div class="horseSlides fade">
+          <div class="numbers ">2 / 3</div>
+          <img src="assets/img/bbg.jpeg" />
+        </div>
+
+        <div class="horseSlides fade">
+          <div class="numbers ">3 / 3</div>
+          <img src="assets/img/horses.jpg" />
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <section id="class" class="horses">
+      <div class="horses__heading heading">
+        <h1>Gárda</h1>
+      </div>
+      <div class="horses__bg">
+        <div class="horses__bg-left"><img src="assets/img/bbg.jpeg" /></div>
+        <div class="horses__bg-right">
+          <div class="horses__bg-right-text">
+            <h2>Írisz</h2>
+            <h4>6 éves</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              rerum! Tenetur, natus. Ducimus error fuga tenetur labore quae eum
+              sunt nam ipsum ad numquam repellat, beatae accusamus, voluptatum
+              molestiae laudantium?
+            </p>
+          </div>
+          <a class="horses__btn-more" href="irisz.html">Bővebben</a>
+        </div>
+      </div>
+      <div class="horses__bg">
+        <div class="horses__bg-left"><img src="assets/img/bbg.jpeg" /></div>
+        <div class="horses__bg-right">
+          <div class="horses__bg-right-text">
+            <h2>Írisz</h2>
+            <h4>6 éves</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              rerum! Tenetur, natus. Ducimus error fuga tenetur labore quae eum
+              sunt nam ipsum ad numquam repellat, beatae accusamus, voluptatum
+              molestiae laudantium?
+            </p>
+          </div>
+          <a class="horses__btn-more" href="irisz.html">Bővebben</a>
+        </div>
+      </div>
+    </section>
+    <section id="sell" class="horses-sell">
+      <div class="horses__heading heading">
+        <h1>Eladó lovak</h1>
+      </div>
+      <div class="horses__bg">
+        <div class="horses__bg-left"><img src="assets/img/bbg.jpeg" /></div>
+        <div class="horses__bg-right">
+          <div class="horses__bg-right-text">
+            <h2>Írisz</h2>
+            <h4>6 éves</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              rerum! Tenetur, natus. Ducimus error fuga tenetur labore quae eum
+              sunt nam ipsum ad numquam repellat, beatae accusamus, voluptatum
+              molestiae laudantium?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/scroll.js"></script>
+  </body>
+</html>

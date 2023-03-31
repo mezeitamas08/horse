@@ -1,0 +1,147 @@
+.horse_alone {
+  height: 90vh;
+  &-bg {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 100%;
+  }
+  &-left {
+    position: relative;
+    top: 5%;
+    left: 20%;
+    width: 25%;
+    height: 40%;
+    & > .horse_alone-left-slides > img {
+      width: 432px;
+      height: 372px;
+    }
+  }
+  &-right {
+    position: relative;
+    top: 5%;
+    left: 20%;
+    height: 65%;
+    width: 35%;
+    background: $color-white;
+    & > h2 {
+      text-align: center;
+      letter-spacing: 0;
+      font-size: $font-size-36;
+      color: $color-black;
+      margin-bottom: 0;
+      margin-top: 1rem;
+    }
+    & > h5 {
+      font-size: $font-size-20;
+      margin-bottom: 3rem;
+    }
+    & > p {
+      padding: 2rem;
+      font-size: $font-size-12;
+    }
+  }
+  &-results {
+    position: absolute;
+    background: $color-white;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 23%;
+    margin-bottom: 3rem;
+    & > h2 {
+      text-align: center;
+      font-size: 2$font-size-25;
+      letter-spacing: 0;
+      color: $color-black;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.horse_alone-results {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  & > h2 {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.horse__alone-results-first {
+  margin-left: 2rem;
+  bottom: 0;
+  position: relative;
+}
+.horse_output {
+  font-size: $font-size-20;
+  font-weight: $font-weight-500;
+}
+.horse_output-bottom {
+  font-size: $font-size-15;
+}
+.horse_alone-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 81px);
+  grid-template-rows: repeat(2, 71px);
+  grid-gap: 0.5rem;
+  justify-content: start;
+  width: 24%;
+  position: absolute;
+  left: -37%;
+  right: 0;
+  height: 28%;
+  margin: auto;
+  top: 54%;
+  &-small {
+    margin: 1rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0.5;
+    &.active,
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.horse-prev,
+.horse-next {
+  cursor: pointer;
+  position: absolute;
+  top: 38%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: $color-white;
+  font-weight: bold;
+  font-size: $font-size-20;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.horse-next {
+  right: 57.5%;
+  border-radius: 3px 0 0 3px;
+}
+.horse-prev:hover,
+.horse-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.horse-prev {
+  position: absolute;
+  left: 20%;
+}
+.caption-container {
+  text-align: center;
+  background-color: $color-grey;
+  padding: 2px 16px;
+  color: $color-white;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  width: 22.5%;
+  height: 4.7%;
+  opacity: 0.8;
+}
